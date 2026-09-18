@@ -8,10 +8,10 @@
 ---
 <br>
 
-🔗 **[Run the Complete Code Live on Kaggle (No Setup Required)](https://www.kaggle.com/code/sauravsingh184/home-credit-risk-portfolio-strategy-sqlite3)**<br>
-🔗 **[View Interactive Power BI Dashboard](Insert_Dashboard_Link_Or_Image_Link_Here)**<br>
-🔗 **[View Standalone SQL Analytics Pipeline](Insert_SQL_File_Link_Here)**<br>
-🔗 **[View Executive Business Presentation (.pptx)](#)**
+🔗 **[Run the Complete Code Live on Kaggle (No Setup Required)](https://www.kaggle.com/code/sauravsingh184/home-credit-risk-portfolio-strategy-python-sql)**<br>
+🔗 **[View Interactive Power BI Dashboard (.pbix)](home_credit_dashboard.pbix)**<br>
+🔗 **[View Standalone SQL Analytics Pipeline](Queries.sql)**<br>
+🔗 **[View Executive Business Presentation (.pptx)](Home_Credit_Analytics_Report.pptx)**
 
 ---
 <br>
@@ -126,7 +126,7 @@ The exploratory data analysis (EDA) and SQL aggregations moved beyond standard d
 
 To synthesize the deep-dive SQL and Python analysis into an accessible format for business stakeholders, I developed a dynamic executive dashboard in Microsoft Power BI. The dashboard is designed to monitor portfolio health and isolate high-risk segments in real-time.
 
-![Power BI Dashboard Preview](insert_your_dashboard_image_link_here.png) *(Note: Replace this link with your actual image file path/link)*
+![Power BI Dashboard Preview](images/home_credit_default_risk_dashboard.png)
 
 **Core KPIs Monitored:**
 * **Total Portfolio Disbursed:** Tracking a massive **$184.1 Billion** in issued capital[cite: 2].
