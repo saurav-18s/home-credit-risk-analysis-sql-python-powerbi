@@ -35,12 +35,12 @@
 
 **The Problem:** High applicant volume does not equal high portfolio quality. The objective of this project was to move beyond basic exploratory data analysis and pinpoint the exact demographic and occupational drivers of loan defaults to mitigate systemic capital leakage.
 
-**The Solution:** By analyzing a massive dataset of 307,433 loan applicants[cite: 2], this project developed a rigorous data pipeline to evaluate historical risk. The analysis exposed critical vulnerabilities in the bank's underwriting process, most notably a **$10.58 Billion capital drain** isolated to a single education demographic[cite: 2].
+**The Solution:** By analyzing a massive dataset of 307,433 loan applicants, this project developed a rigorous data pipeline to evaluate historical risk. The analysis exposed critical vulnerabilities in the bank's underwriting process, most notably a **$10.58 Billion capital drain** isolated to a single education demographic.
 
 **Key Strategic Outcomes:**
-* **Plugging Portfolio Bleeding:** Proposed strict Loan-to-Value (LTV) caps for the 'Secondary / secondary special' demographic to stop the $10.58B leakage[cite: 2].
-* **UI/UX Optimization (80/20 Rule):** Identified that 79.4% of historical loan refusals stem from just two internal limit caps ('HC' and 'LIMIT')[cite: 2]. Recommended a dynamic "Pre-Approved Limit" slider to eliminate wasted underwriting bandwidth.
-* **Macro vs. Micro Risk Safeguards:** Designed a dual-pronged strategy to counter systemic volume risk driven by Laborers ($3.11B total loss) versus severe single-ticket risk driven by Managers ($704k loss per default)[cite: 2].
+* **Plugging Portfolio Bleeding:** Proposed strict Loan-to-Value (LTV) caps for the 'Secondary / secondary special' demographic to stop the $10.58B leakage.
+* **UI/UX Optimization (80/20 Rule):** Identified that 79.4% of historical loan refusals stem from just two internal limit caps ('HC' and 'LIMIT'). Recommended a dynamic "Pre-Approved Limit" slider to eliminate wasted underwriting bandwidth.
+* **Macro vs. Micro Risk Safeguards:** Designed a dual-pronged strategy to counter systemic volume risk driven by Laborers ($3.11B total loss) versus severe single-ticket risk driven by Managers ($704k loss per default).
 
 ---
 
@@ -110,13 +110,13 @@ WHERE p.rn = 1; -- Ensures only the latest historical interaction is evaluated
 
 The exploratory data analysis (EDA) and SQL aggregations moved beyond standard default rates to uncover severe structural vulnerabilities in the bank's lending portfolio. 
 
-* **The $10.58 Billion Leakage:** Applicants with a 'Secondary / secondary special' education make up the bulk of the portfolio[cite: 2]. This specific demographic accounts for a staggering ***76%*** of all defaulted money, equating to a massive **$10.58 Billion** loss for the bank[cite: 2].
+* **The $10.58 Billion Leakage:** Applicants with a 'Secondary / secondary special' education make up the bulk of the portfolio. This specific demographic accounts for a staggering ***76%*** of all defaulted money, equating to a massive **$10.58 Billion** loss for the bank.
 * **Macro (Volume) vs. Micro (Severity) Risk:** 
-  * *Macro Risk:* 'Low-skill Laborers' are a massive liability, defaulting at ***17.18%***[cite: 2].
-  * *Micro Risk:* While 'Managers' account for fewer total defaults, a single defaulting manager costs the bank an average of **$704k**—the highest per-unit loss[cite: 2].
-* **The 80/20 Underwriting Bottleneck:** The rejection pipeline is highly skewed, with internal rules ('HC') and limit caps ('LIMIT') driving **79.4%** of all loan refusals[cite: 2]. Processing applications destined to fail wastes massive underwriting bandwidth[cite: 2].
-* **The "Cooling-Off" Reality:** Applicants who had a loan rejected within the last 1 year hold a highly elevated **11.88%** default rate[cite: 2]. If the past rejection is older than 1 year, the risk normalizes down significantly to **8.79%**, matching standard baseline levels[cite: 2].
-* **The Credit-to-Income Myth:** High loan amounts aren't the real threat[cite: 2]. The Credit-to-Income ratio for Defaulters (**3.88**) and Non-Defaulters (**3.96**) is virtually identical[cite: 2]. The real burden is EMI affordability, which consumes approximately **16%** of a standard client's annual salary, causing cash flow issues[cite: 2].
+  * *Macro Risk:* 'Low-skill Laborers' are a massive liability, defaulting at ***17.18%***.
+  * *Micro Risk:* While 'Managers' account for fewer total defaults, a single defaulting manager costs the bank an average of **$704k**—the highest per-unit loss.
+* **The 80/20 Underwriting Bottleneck:** The rejection pipeline is highly skewed, with internal rules ('HC') and limit caps ('LIMIT') driving **79.4%** of all loan refusals. Processing applications destined to fail wastes massive underwriting bandwidth.
+* **The "Cooling-Off" Reality:** Applicants who had a loan rejected within the last 1 year hold a highly elevated **11.88%** default rate. If the past rejection is older than 1 year, the risk normalizes down significantly to **8.79%**, matching standard baseline levels.
+* **The Credit-to-Income Myth:** High loan amounts aren't the real threat. The Credit-to-Income ratio for Defaulters (**3.88**) and Non-Defaulters (**3.96**) is virtually identical. The real burden is EMI affordability, which consumes approximately **16%** of a standard client's annual salary, causing cash flow issues.
 
 ---
 
@@ -129,7 +129,7 @@ To synthesize the deep-dive SQL and Python analysis into an accessible format fo
 ![Power BI Dashboard Preview](images/home_credit_default_risk_dashboard.png)
 
 **Core KPIs Monitored:**
-* **Total Portfolio Disbursed:** Tracking a massive **$184.1 Billion** in issued capital[cite: 2].
+* **Total Portfolio Disbursed:** Tracking a massive **$184.1 Billion** in issued capital.
 * **Total Money Lost (Capital at Risk):** Visualizing the **$13.8 Billion** lost to defaulted loans across 25K+ defaulters.
 
 **Key Dashboard Features & Interactivity:**
