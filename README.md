@@ -161,7 +161,7 @@ Based on the data, I proposed actionable strategies to the underwriting team to 
 
 To respect the time of technical reviewers and hiring managers, the entire Python data processing and SQL analytics pipeline has been hosted on Kaggle for zero-setup, 1-click execution.
 
-* **Run the Full Pipeline (Cloud):** [View and run the Kaggle Notebook Here](https://www.kaggle.com/code/sauravsingh184/home-credit-risk-portfolio-strategy-sqlite3)
+* **Run the Full Pipeline (Cloud):** [View and run the Kaggle Notebook Here](https://www.kaggle.com/code/sauravsingh184/home-credit-risk-portfolio-strategy-python-sql)
 * **View Standalone SQL Queries:** For reviewers purely interested in the SQL architecture (CTEs, Window Functions, Aggregations), view the `Queries.sql` file in this repository.
 * **View the Executive Presentation:** The final business slides can be viewed in the `Home_Credit_Analytics_Report.pptx` file.
 
